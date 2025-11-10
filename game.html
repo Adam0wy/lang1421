@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模拟吹糖体验 - 香港吹糖非遗文化</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+</head>
+<body class="bg-background text-text flex flex-col items-center justify-center min-h-screen p-4 md:p-8 font-sans">
+
+    <div class="w-full max-w-lg">
+        <div class="bg-paper p-6 md:p-8 rounded-lg shadow-lg w-full">
+            <h3 class="text-2xl md:text-3xl font-bold text-primary mb-6 text-center font-serif">模拟吹糖小游戏</h3>
+            <div id="game-container" class="relative w-full h-96 min-h-[400px] flex flex-col items-center justify-center bg-background rounded-md overflow-hidden p-4">
+                <!-- Game content will be injected here by game_page.js -->
+            </div>
+        </div>
+        <div class="text-center mt-6">
+            <a href="index.html" class="text-primary hover:text-accent font-semibold transition-colors duration-300 inline-flex items-center">
+                <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
+                返回主页
+            </a>
+        </div>
+    </div>
+    
+    <script type="module" src="game_page.js"></script>
+</body>
+</html>
